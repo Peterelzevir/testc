@@ -5,6 +5,8 @@ const { default: makeWASocket, useMultiFileAuthState, DisconnectReason } = requi
 const pino = require('pino');
 const { Boom } = require('@hapi/boom');
 const chalk = require('chalk');
+//
+global.crypto = require('crypto');
 
 console.log(chalk.green('================================='));
 console.log(chalk.green('WhatsApp Connection Test'));
